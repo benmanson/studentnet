@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Register for StudentNet</title>
+<link rel="stylesheet" href="main.css"/>
+<script type="text/javascript" src="validationRegistration.js"></script>
+</head>
+
+<body>
+<ul>
+  <li><a href="homepage.php">Home</a></li>
+  <li><a href="message.php">Message Board</a></li>
+  <li><a href="profile.php">Profile</a></li>
+  <li style="float:right"><a class="active" href="login.html">Login</a></li>
+</ul>
+<div style="padding:15px;margin-top:20px;background-color:#D3D3D3;height:1500px;"/>
+
+<h3>Check and double check data entries as only your password can be edited after!</h3>
+<h3>Register for StudentNet today:</h3>
+
+<form name="registration" onsubmit="return validateFormOnSubmit(this)" action="registration.php" method="POST">
+<table>
+<tr><td>First Name:</td><td><input type="text" name="firstname" maxlength="15"/></td></tr>
+<tr><td>Surname:</td><td><input type="text" name="surname" maxlength="20"/></td></tr>
+<tr><td>Gender:</td><td> <input id="male" type="radio" name="gender" value="m"/> Male<br/><input id="female" type="radio" name="gender" value="f"/> Female<br/></td></tr>
+<tr><td>Date of Birth:</td><td><input type="date" name="bday" max="2005-12-31" min="1998-01-01"/></td></tr>
+<tr><td>Email:</td><td><input type="text" name="email"/></td></tr>
+<tr><td>Username:</td><td><input type="text" name="username" maxlength="15"/></td></tr>
+<tr><td>Password:</td><td><input id="password" type="password" name="password"/></td></tr>
+</table>
+<input type="submit" value="Register Now!" />
+</form>
+
+</body>
+
+</html>
